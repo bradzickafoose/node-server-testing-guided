@@ -11,7 +11,7 @@ module.exports = {
 async function insert(hobbit) {
   return db('hobbits')
     .insert(hobbit)
-    .returning("id");
+    .returning('id');
 }
 
 async function update(id, changes) {
